@@ -4,14 +4,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner teclado=new Scanner(System.in);
-		double salr,salarios,min;
-		salr=1100;
+		double salamin,salafunc,quantid;
+		System.out.println("Digite o valor do salario minimo");
+		salamin=teclado.nextDouble();
 		
 		System.out.println("Digite o salario do funcionario");
-		salarios=teclado.nextDouble();
-		min= salarios/salr;
+	    salafunc=teclado.nextDouble();
 		
-		System.out.printf("O salario do funcionario é %.2f%n de um salario minimo ", min);
+		quantid=salafunc/salamin;
+	    
+		System.out.println("o funcionário recebe " +quantid+ " salarios minimos");
 		
 		teclado.close();
 	}
